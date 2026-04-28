@@ -3,26 +3,24 @@
 
 public class Main {
 
-    public static int encontrarMaior(int[] numeros) {
+    public static int somarArray(int[] numeros) {
+        int soma = 0;
 
-        int maior = numeros[0];
-
-        for (int i = 1; i < numeros.length; i++) {
-
-            if (numeros[i] > maior) {
-                maior = numeros[i];
-            }
+        for (int i = 0; i < numeros.length; i++) {
+            soma += numeros[i];
         }
 
-        return maior;
+        return soma;
     }
 
     public static void main(String[] args) {
 
-        int[] array1 = {4, 7, 2, 9, 1};
-        System.out.println("Maior valor: " + encontrarMaior(array1));
+        int[] array1 = {1, 2, 3, 4, 5};
+        System.out.println("Soma: " + somarArray(array1));
 
-        int[] array2 = {100, 50, 75};
-        System.out.println("Maior valor: " + encontrarMaior(array2));
+        int[] array2 = {10, 20, 30};
+        System.out.println("Soma: " + somarArray(array2));
+
     }
+
 }
